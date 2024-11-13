@@ -1,0 +1,183 @@
+
+        /* Apply Century Gothic font to the whole page */
+        body.resume {
+            font-family: "Century Gothic", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/resume-background.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        /* Header styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header #burger-menu {
+            display: none;
+        }
+
+        /* Main resume section */
+        #resume {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark background for content */
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .resume-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* Increase profile image size */
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff; /* White border around image */
+        }
+
+        .personal-info h3 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .personal-info p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+        .resume-section h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        .resume-section ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        /* Styled button with purple background */
+        .resume-download a {
+            background-color: #6a1b9a; /* Purple color */
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-download a:hover {
+            background-color: #4a148c; /* Darker purple on hover */
+        }
+
+       /* Simple mobile burger menu */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+
+    /* Adjust Resume Section for Small Screens */
+    #resume {
+        padding: 20px;
+        margin: 20px;
+        max-width: 100%;
+    }
+
+    .resume-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    .personal-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .personal-info p {
+        font-size: 1rem;
+    }
+
+    .resume-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .resume-section ul {
+        padding-left: 15px;
+    }
+
+    /* Adjust the download button */
+    .resume-download a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* Mobile View - Extra Small Screens */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    .resume-header {
+        gap: 15px;
+    }
+
+    .resume-download a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .personal-info p {
+        font-size: 0.9rem;
+    }
+
+    .resume-section h3 {
+        font-size: 1.2rem;
+    }
+}

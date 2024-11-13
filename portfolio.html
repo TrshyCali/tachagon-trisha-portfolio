@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Trisha Joy Tachagon</title>
+    <link rel="stylesheet" href="style3.css">
+   
+</head>
+<body class="portfolio">
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <h2>Projects</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <a href="images/project1.jpg" class="lightbox">
+                    <img src="images/project1.jpg" alt="Project 1">
+                </a>
+                <div class="portfolio-overlay">
+                    <p>Project 1: DCS Simple Website</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <a href="images/project2.jpg" class="lightbox">
+                    <img src="images/project2.jpg" alt="Project 2">
+                </a>
+                <div class="portfolio-overlay">
+                    <p>Project 2: Technofermata Company</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <a href="images/project3.jpg" class="lightbox">
+                    <img src="images/project3.jpg" alt="Project 3">
+                </a>
+                <div class="portfolio-overlay">
+                    <p>Project 3: Course Lanyard</p>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox-overlay" class="hidden">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-image" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

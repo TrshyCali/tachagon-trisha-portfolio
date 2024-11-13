@@ -1,0 +1,174 @@
+
+        /* Background GIF */
+        body.contact {
+            background-image: url('images/contact-bg.jpg'); /* Replace with your desired GIF */
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+        }
+header {
+    
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+        /* Center the form container */
+        section#contact {
+            background: rgba(20, 2, 19, 0.9); /* Semi-transparent white */
+            border-radius: 10px;
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #34495e;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: white; /* Set icon color to white */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 30px; /* Increase icon size */
+        }
+
+        .social-icons a:hover {
+            color: #3498db; /* Change hover color to blue */
+        }
+
+       
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    section#contact {
+        padding: 20px;
+        width: 90%; /* Make the container a bit narrower on smaller screens */
+    }
+
+    /* Adjust header and navigation items for smaller screens */
+    header {
+        padding: 20px 0; /* Reduce header padding */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Smaller gap between items */
+        margin-top: 10px; /* Space between header and nav */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Less margin between items */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font for mobile */
+    }
+
+    .social-icons a {
+        font-size: 25px; /* Slightly smaller icons on smaller screens */
+        margin: 0 10px; /* Reduced margin */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Slightly smaller heading on mobile */
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem; /* Reduce font size of inputs and textareas */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 8px 15px; /* Smaller button size */
+    }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    section#contact {
+        padding: 15px; /* Further reduced padding */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .social-icons a {
+        font-size: 22px; /* Smaller icons for very small screens */
+    }
+
+    button {
+        font-size: 0.9rem; /* Even smaller button text */
+        padding: 8px 12px; /* Further reduced button size */
+    }
+}

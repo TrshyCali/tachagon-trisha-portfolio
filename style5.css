@@ -1,0 +1,175 @@
+
+        /* Set background GIF */
+        body.skills {
+            font-family: "Century Gothic", Arial, sans-serif;
+            background: url('images/background.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Center container vertically and horizontally */
+        section#skills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Transparent Box Styling */
+        .skills-container {
+            width: 80%;
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .skills-box {
+            background-color: rgba(255, 255, 255, 0.7); /* Transparent box */
+            border-radius: 10px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        .skills-box h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+           
+            padding: 20px;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+    
+/* For Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .skills-container {
+        width: 90%;
+    }
+
+    .skills-box {
+        width: 48%;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+}
+
+/* For Small Tablets and Large Phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .skills-container {
+        width: 95%;
+    }
+
+    .skills-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding: 10px; /* Reduced padding for smaller screens */
+        margin-bottom: 10px; /* Less space between header and content */
+    }
+
+    /* Make the navigation menu stack vertically for smaller screens */
+    nav ul {
+        flex-direction: column; /* Stack vertically on small screens */
+        gap: 15px; /* More gap between items */
+        width: 100%; /* Full width for mobile */
+    }
+
+    nav ul li {
+        width: 100%; /* Each item takes full width */
+        text-align: center; /* Center text for better readability */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Slightly smaller text for mobile */
+    }
+}
+
+/* For Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    body.skills {
+        padding: 10px;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .skills-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .skills-box h3 {
+        font-size: 1.4rem;
+    }
+
+    nav ul {
+        gap: 10px; /* Slightly smaller gap */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Further reduce font size for very small screens */
+        padding: 8px; /* Reduced padding */
+    }
+
+    header {
+        padding: 8px; /* Slightly less padding for very small screens */
+    }
+}
